@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0b0517;
+    color: #ede8de;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom luxury gold gradients & accents */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fff7e6 0%, #ecd07a 30%, #d4af37 60%, #b88e24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-light {
+  color: #f3e5ab;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #e8c766 50%, #b88e24 100%);
+}
+
+.bg-gold-gradient-hover:hover {
+  background: linear-gradient(135deg, #e8c766 0%, #f7dc8c 50%, #cfa735 100%);
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.22);
+}
+
+.border-gold-medium {
+  border-color: rgba(212, 175, 55, 0.45);
+}
+
+.gold-glow {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.12);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.22);
+}
+
+.purple-glass {
+  background: rgba(24, 11, 46, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.purple-card {
+  background: linear-gradient(180deg, rgba(29, 14, 56, 0.8) 0%, rgba(18, 8, 38, 0.95) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.16);
+}
+
+.purple-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.purple-card-hover:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 16px 40px -10px rgba(212, 175, 55, 0.18), 0 0 25px rgba(88, 28, 135, 0.3);
+  transform: translateY(-4px);
+}
+
+/* Subtle particle animation simulation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-15px) rotate(4deg);
+    opacity: 0.65;
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+@keyframes pulseGold {
+  0%, 100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.animate-gold-pulse {
+  animation: pulseGold 4s ease-in-out infinite;
+}
