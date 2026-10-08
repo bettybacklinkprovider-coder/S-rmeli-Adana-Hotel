@@ -1,5 +1,19 @@
 import { RoomItem, FacilityItem, GalleryPhoto, WhyChooseItem } from '../types';
 
+import heroImg from '../assets/images/hero_surmeli_adana_1791443753195.jpg';
+import aboutImg from '../assets/images/about_hotel_interior_1791443771811.jpg';
+import roomDeluxeImg from '../assets/images/room_deluxe_suite_1791443785841.jpg';
+import roomStandardImg from '../assets/images/room_standard_executive_1791443867566.jpg';
+import roomSuiteImg from '../assets/images/room_presidential_suite_1791443897522.jpg';
+import diningRestaurantImg from '../assets/images/dining_restaurant_turkish_1791443802940.jpg';
+import breakfastImg from '../assets/images/hotel_breakfast_buffet_1791443818605.jpg';
+import loungeBarImg from '../assets/images/lounge_cocktail_bar_1791443881760.jpg';
+import adanaLandmarkImg from '../assets/images/adana_taskopru_view_1791444864623.jpg';
+import turkishHospitalityImg from '../assets/images/turkish_hospitality_tea_1791444880267.jpg';
+import turkishKebapImg from '../assets/images/turkish_kebap_dining_1791444899989.jpg';
+import turkishConciergeImg from '../assets/images/turkish_hotel_concierge_1791444915548.jpg';
+import turkishGrandLoungeImg from '../assets/images/turkish_grand_lounge_1791444930302.jpg';
+
 export const HOTEL_INFO = {
   name: 'Sürmeli Adana Hotel',
   shortName: 'Sürmeli Adana',
@@ -26,19 +40,19 @@ export const HOTEL_INFO = {
 };
 
 export const HOTEL_IMAGES = {
-  hero: '/src/assets/images/hero_surmeli_adana_1791443753195.jpg',
-  about: '/src/assets/images/about_hotel_interior_1791443771811.jpg',
-  roomDeluxe: '/src/assets/images/room_deluxe_suite_1791443785841.jpg',
-  roomStandard: '/src/assets/images/room_standard_executive_1791443867566.jpg',
-  roomSuite: '/src/assets/images/room_presidential_suite_1791443897522.jpg',
-  diningRestaurant: '/src/assets/images/dining_restaurant_turkish_1791443802940.jpg',
-  breakfast: '/src/assets/images/hotel_breakfast_buffet_1791443818605.jpg',
-  loungeBar: '/src/assets/images/lounge_cocktail_bar_1791443881760.jpg',
-  adanaLandmark: '/src/assets/images/adana_taskopru_view_1791444864623.jpg',
-  turkishHospitality: '/src/assets/images/turkish_hospitality_tea_1791444880267.jpg',
-  turkishKebap: '/src/assets/images/turkish_kebap_dining_1791444899989.jpg',
-  turkishConcierge: '/src/assets/images/turkish_hotel_concierge_1791444915548.jpg',
-  turkishGrandLounge: '/src/assets/images/turkish_grand_lounge_1791444930302.jpg',
+  hero: heroImg,
+  about: aboutImg,
+  roomDeluxe: roomDeluxeImg,
+  roomStandard: roomStandardImg,
+  roomSuite: roomSuiteImg,
+  diningRestaurant: diningRestaurantImg,
+  breakfast: breakfastImg,
+  loungeBar: loungeBarImg,
+  adanaLandmark: adanaLandmarkImg,
+  turkishHospitality: turkishHospitalityImg,
+  turkishKebap: turkishKebapImg,
+  turkishConcierge: turkishConciergeImg,
+  turkishGrandLounge: turkishGrandLoungeImg,
 };
 
 export const ROOMS_DATA: RoomItem[] = [
